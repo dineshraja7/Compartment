@@ -77,25 +77,32 @@ public class TrainSchedule{
 			
 			
 			FirstAC comp1 = new FirstAC();
-			comp1.capacity = 6;
+			comp1.capacity = 30;
 			compartmentList.add(comp1);
 			
 			SleeperClass comp2 = new SleeperClass();
+			comp2.capacity = 35;
 			compartmentList.add(comp2);
 			
+			
 			SleeperClass comp3 = new SleeperClass();
-            compartmentList.add(comp3);
+            comp3.capacity = 30;
+			compartmentList.add(comp3);
 			
 			SleeperClass comp4 = new SleeperClass();
+			comp4.capacity = 25;
 			compartmentList.add(comp4);
 			
 			Pantry comp5 = new Pantry();
+			comp5.capacity = 2;
 			compartmentList.add(comp5);
 			
 			Unreserved comp6 = new Unreserved();
+			comp5.capacity = 50;
 			compartmentList.add(comp6);
 			
 			Unreserved comp7 = new Unreserved();
+			comp6.capacity = 50;
 			compartmentList.add(comp7);
 			
 			
@@ -153,33 +160,43 @@ public class TrainSchedule{
 			maduraiExpress.initialize(456,"Madurai Express","Kovilpatti","Madurai","07:00 AM","10:29 AM");
 			
 			Engine maduraii = new Engine();
+			maduraii.capacity = 2
 			compartmentList.add(maduraii);
 			
 			FirstAC mducomp1 = new FirstAC();
+			mducomp1.capacity = 25;
 			compartmentList.add(mducomp1);
 			
 			FirstAC mducomp2 = new FirstAC();
+			mducomp2.capacity = 30;
 			compartmentList.add(mducomp2);
 			
 			FirstAC mducomp3 = new FirstAC();
+			mducomp3.capacity = 35;
 			compartmentList.add(mducomp3);
 			
 			Pantry mducomp4 = new Pantry();
+			mducomp4.capacity = 2;
 			compartmentList.add(mducomp4);
 			
 			Unreserved mducomp5 = new Unreserved();
+			mducomp5.capacity = 50;
 			compartmentList.add(mducomp5);
 			
 			Unreserved mducomp6 = new Unreserved();
+			mducomp6.capacity = 50;
 			compartmentList.add(mducomp6);
 			
 			SleeperClass mducomp7 = new SleeperClass();
+			mducomp7.capacity = 30;
 			compartmentList.add(mducomp7);
 			
 			SleeperClass mducomp8 = new SleeperClass();
+			mducomp8.capacity = 35;
 			compartmentList.add(mducomp8);
 			
 			SleeperClass mducomp9 = new SleeperClass();
+			mducomp9.capacity = 33;
 			compartmentList.add(mducomp9);
 			
 			Station madurai = new Station();
@@ -215,42 +232,51 @@ public class TrainSchedule{
 			nagercoilExpress.initialize(678,"Nagercoil Express","Virudhunagar","Nagercoil","08:00 AM","12:00 PM");
 			
 			Engine nagercoil = new Engine();
-			compartmentList.add(nagercoil);
-			
-			Engine nagercoil2 = new Engine();
+			nagercoil.capacity = 2;
 			compartmentList.add(nagercoil);
 			
 			FirstAC ngcomp1 = new FirstAC();
+			ngcomp1.capacity = 33;
 			compartmentList.add(ngcomp1);
 			
 			FirstAC ngcomp2 = new FirstAC();
+			ngcomp2.capacity = 24;
 			compartmentList.add(ngcomp2);
 			
 			FirstAC ngcomp3 = new FirstAC();
+			ngcomp3.capacity = 22;
 			compartmentList.add(ngcomp3);
 			
 			Pantry ngcomp4 = new Pantry();
+			ngcomp4.capacity = 2;
 			compartmentList.add(ngcomp4);
 			
 			Pantry ngcomp5 = new Pantry();
+			ngcomp5.capacity = 2;
 			compartmentList.add(ngcomp5);
 			
 			Unreserved ngcomp6 = new Unreserved();
+			ngcomp6.capacity = 50;
 			compartmentList.add(ngcomp6);
 			
 			Unreserved ngcomp7 = new Unreserved();
+			ngcomp7.capacity = 50;
 			compartmentList.add(ngcomp7);
 			
 			Unreserved ngcomp8 = new Unreserved();
+			ngcomp8.capacity = 50;
 			compartmentList.add(ngcomp8);
 			
 			SleeperClass ngcomp9 = new SleeperClass();
+			ngcomp9.capacity = 25;
 			compartmentList.add(ngcomp9);
 			
 			SleeperClass ngcomp10 = new SleeperClass();
+			ngcomp10.capacity = 27;
 			compartmentList.add(ngcomp10);
 			
 			SleeperClass ngcomp11 = new SleeperClass();
+			ngcomp11.capacity = 22;
 			compartmentList.add(ngcomp11);
 			
 			Station virudhunagar = new Station();
