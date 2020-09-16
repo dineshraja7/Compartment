@@ -51,6 +51,10 @@ public void addStations(ArrayList stnList){
 	stationList.addAll(stnList);
 }
 
+public void addCompartment(LinkedList cmpList){
+	compartmentList.addAll(cmpList);
+}
+
 
 
 
