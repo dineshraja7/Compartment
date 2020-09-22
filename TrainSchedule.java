@@ -73,60 +73,46 @@ public class TrainSchedule{
 			mumbaiExpress.initialize(123,"Mumbai Express","Chennai","Mumbai","06:00 AM","10:AM");
 			
 			Engine mumbai = new Engine();
+			mumbai.capacity = 1;
 		    compartmentList.add(mumbai);
-			mumbaiExpress.addCompartment(compartmentList);
 			System.out.println("This Train Has an Engine");
-			compartmentList.clear();
 			
 			
 			FirstAC comp1 = new FirstAC();
 			comp1.capacity = 30;
 			compartmentList.add(comp1);
-			mumbaiExpress.addCompartment(compartmentList);
 			System.out.println("This train has FirstAC Compartment");
-			compartmentList.clear();
+
 			
 			SleeperClass comp2 = new SleeperClass();
 			comp2.capacity = 35;
 			compartmentList.add(comp2);
-			mumbaiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has SleeperClass Compartment");
-			compartmentList.clear();
 			
 			SleeperClass comp3 = new SleeperClass();
             comp3.capacity = 30;
 			compartmentList.add(comp3);
-			mumbaiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has another SleeperClass Compartment");
-			compartmentList.clear();
 			
 			SleeperClass comp4 = new SleeperClass();
 			comp4.capacity = 25;
 			compartmentList.add(comp4);
-			mumbaiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has 3rd SleeperClass Compartment");
-			compartmentList.clear();
 			
 			Pantry comp5 = new Pantry();
 			comp5.capacity = 2;
 			compartmentList.add(comp5);
-			mumbaiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has a Pantry Compartment");
-			compartmentList.clear();
 			
 			Unreserved comp6 = new Unreserved();
 			comp5.capacity = 50;
 			compartmentList.add(comp6);
-			mumbaiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an Unreserved Compartment");
-			compartmentList.clear();
 			
 			Unreserved comp7 = new Unreserved();
 			comp6.capacity = 50;
 			compartmentList.add(comp7);
-			mumbaiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an another Unreserved Compartment");
-			compartmentList.clear();
 			
 			
 			Station chennai = new Station();
@@ -176,6 +162,8 @@ public class TrainSchedule{
 			
 			mumbaiExpress.addStations(stationList);
 			trainList.add(mumbaiExpress);
+			mumbaiExpress.addCompartment(compartmentList);
+			compartmentList.clear();
 			stationList.clear();
 			
 			
@@ -185,73 +173,64 @@ public class TrainSchedule{
 			Engine maduraii = new Engine();
 			maduraii.capacity = 2;
 			compartmentList.add(maduraii);
-			maduraiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an Engine");
-			compartmentList.clear();
+		
 			
 			
 			FirstAC mducomp1 = new FirstAC();
 			mducomp1.capacity = 25;
 			compartmentList.add(mducomp1);
-			maduraiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an FirstAC Compartment");
-			compartmentList.clear();
+		
 			
 			FirstAC mducomp2 = new FirstAC();
 			mducomp2.capacity = 30;
 			compartmentList.add(mducomp2);
-			maduraiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an another FirstAC Compartment");
-			compartmentList.clear();
+		
 			
 			FirstAC mducomp3 = new FirstAC();
 			mducomp3.capacity = 35;
 			compartmentList.add(mducomp3);
-			maduraiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has 3rd FirstAC Compartment");
-			compartmentList.clear();
+			
 			
 			Pantry mducomp4 = new Pantry();
 			mducomp4.capacity = 2;
 			compartmentList.add(mducomp4);
-			maduraiExpress.addCompartment(compartmentList);
 			System.out.println("This Train Has a Pantry Compartment");
-			compartmentList.clear();
+			
 			
 			Unreserved mducomp5 = new Unreserved();
 			mducomp5.capacity = 50;
 			compartmentList.add(mducomp5);
-			maduraiExpress.addCompartment(compartmentList);
+			maduraiExpress.addCompartment(mducomp5);
 			System.out.println("This Train has an Unreserved Compartment");
-			compartmentList.clear();
+	
 			
 			Unreserved mducomp6 = new Unreserved();
 			mducomp6.capacity = 50;
 			compartmentList.add(mducomp6);
-			maduraiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an another Unreserved Compartment");
-			compartmentList.clear();
+		
 			
 			SleeperClass mducomp7 = new SleeperClass();
 			mducomp7.capacity = 30;
 			compartmentList.add(mducomp7);
-			maduraiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an SleeperClass Compartment");
-			compartmentList.clear();
+			
 			
 			SleeperClass mducomp8 = new SleeperClass();
 			mducomp8.capacity = 35;
 			compartmentList.add(mducomp8);
-			maduraiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an another SleeperClass Compartment");
-			compartmentList.clear();
+			
 			
 			SleeperClass mducomp9 = new SleeperClass();
 			mducomp9.capacity = 33;
 			compartmentList.add(mducomp9);
-			maduraiExpress.addCompartment(compartmentList);
 			System.out.println("This Train has 3rd SleeperClass Compartment");
-			compartmentList.clear();
+		
 			
 			
 			Station madurai = new Station();
@@ -279,7 +258,9 @@ public class TrainSchedule{
 			stationList.add(thiruparangundram);
 			
 			maduraiExpress.addStations(stationList);
+			maduraiExpress.addCompartment(compartmentList);
 			trainList.add(maduraiExpress);
+			compartmentList.clear();
 			stationList.clear();
 
 			
@@ -289,87 +270,76 @@ public class TrainSchedule{
 			Engine nagercoil = new Engine();
 			nagercoil.capacity = 2;
 			compartmentList.add(nagercoil);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an Engine");
-			compartmentList.clear();
+			
 			
 			FirstAC ngcomp1 = new FirstAC();
 			ngcomp1.capacity = 33;
 			compartmentList.add(ngcomp1);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has a FirstAC Compartment");
-			compartmentList.clear();
+			
 			
 			FirstAC ngcomp2 = new FirstAC();
 			ngcomp2.capacity = 24;
 			compartmentList.add(ngcomp2);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has another FirstAC Compartment");
-			compartmentList.clear();
+			
 			
 			FirstAC ngcomp3 = new FirstAC();
 			ngcomp3.capacity = 22;
 			compartmentList.add(ngcomp3);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has 3rd FirstAC Compartment");
-			compartmentList.clear();
+	
 			
 			Pantry ngcomp4 = new Pantry();
 			ngcomp4.capacity = 2;
 			compartmentList.add(ngcomp4);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an Pantry Compartment");
-			compartmentList.clear();
+			
 			
 			Pantry ngcomp5 = new Pantry();
 			ngcomp5.capacity = 2;
 			compartmentList.add(ngcomp5);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an another Pantry");
-			compartmentList.clear();
+			
 			
 			Unreserved ngcomp6 = new Unreserved();
 			ngcomp6.capacity = 50;
 			compartmentList.add(ngcomp6);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an Unreserved Compartment");
-			compartmentList.clear();
+			
 			
 			
 			Unreserved ngcomp7 = new Unreserved();
 			ngcomp7.capacity = 50;
 			compartmentList.add(ngcomp7);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an another Unreserved Compartment");
-			compartmentList.clear();
+		
 			
 			Unreserved ngcomp8 = new Unreserved();
 			ngcomp8.capacity = 50;
 			compartmentList.add(ngcomp8);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has 3rd Unreserved Compartment");
-			compartmentList.clear();
+			
 			
 			SleeperClass ngcomp9 = new SleeperClass();
 			ngcomp9.capacity = 25;
 			compartmentList.add(ngcomp9);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an SleeperClass Compartment");
-			compartmentList.clear();
+
 			
 			SleeperClass ngcomp10 = new SleeperClass();
 			ngcomp10.capacity = 27;
 			compartmentList.add(ngcomp10);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has an another SleeperClass Compartment");
-			compartmentList.clear();
+
 			
 			SleeperClass ngcomp11 = new SleeperClass();
 			ngcomp11.capacity = 22;
 			compartmentList.add(ngcomp11);
-			nagercoilExpress.addCompartment(compartmentList);
 			System.out.println("This Train has 3rf SleeperClass Compartment");
-			compartmentList.clear();
+			
+			
 			
 			Station virudhunagar = new Station();
 			stationFacility.add("Arrival and Departure Boards Digitalized");
@@ -405,6 +375,8 @@ public class TrainSchedule{
 			
 			nagercoilExpress.addStations(stationList);
 			trainList.add(nagercoilExpress);
+			nagercoilExpress.addCompartment(compartmentList);
+			compartmentList.clear();
 			stationList.clear();
       
 		
@@ -416,6 +388,11 @@ public class TrainSchedule{
 			kallupatti.addFacility(stationFacility);
 			stationFacility.clear();
 			stationList.add(kallupatti);
+			
+			Engine Vaigai = new Engine();
+			Vaigai.capacity = 2;
+			compartmentList.add(Vaigai);
+			System.out.println("This Train has an engine");
 		
 		
 			Station malamadai = new Station();
