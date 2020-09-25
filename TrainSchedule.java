@@ -13,9 +13,7 @@ public class TrainSchedule{
 		 
 		 TrainSchedule trainSchedule= new TrainSchedule();
 		trainSchedule.createTrain(trainList,stationList,stationFacility,compartmentList);
-		 
-		 //System.out.println("Hello World");
-		 //System.out.println("I have made a change here chitapa");
+		
 		 System.out.println("Please enter your Destination-------->");
 		Scanner destinationPoint = new Scanner(System.in);
 		String dest = destinationPoint.next();
@@ -30,13 +28,22 @@ public class TrainSchedule{
 		for(int i=0;i<trainList.size();i++){
 			Train currentTrain = (Train)trainList.get(i);
 			boolean facilityExists = false;
+			System.out.println(currentTrain);
 			if(currentTrain.destination.equals(dest)){
+				
+				
 				
 				
 				
 				
 	        for( int j=0;j<currentTrain.stationList.size();j++){
 				Station currentStation = (Station)currentTrain.stationList.get(j);
+				
+				
+				for(int k=0;k<currentTrain.compartmentList.size();k++){
+					ITrainUnit currentCompartment = (ITrainUnit)currentTrain.compartmentList.get(k);
+					System.out.println(currentCompartment);
+				}
 				
 				
 				
@@ -55,7 +62,9 @@ public class TrainSchedule{
 					System.out.println("Error Please Enter the Destination and Facility correctly!!!!");
 				}
 				
+				
 			}
+			
 			
 			
 		
@@ -161,8 +170,8 @@ public class TrainSchedule{
 			stationList.add(solapur);
 			
 			mumbaiExpress.addStations(stationList);
-			trainList.add(mumbaiExpress);
 			mumbaiExpress.addCompartment(compartmentList);
+			trainList.add(mumbaiExpress);
 			compartmentList.clear();
 			stationList.clear();
 			
@@ -204,7 +213,6 @@ public class TrainSchedule{
 			Unreserved mducomp5 = new Unreserved();
 			mducomp5.capacity = 50;
 			compartmentList.add(mducomp5);
-			maduraiExpress.addCompartment(mducomp5);
 			System.out.println("This Train has an Unreserved Compartment");
 	
 			
@@ -374,8 +382,8 @@ public class TrainSchedule{
 			
 			
 			nagercoilExpress.addStations(stationList);
-			trainList.add(nagercoilExpress);
 			nagercoilExpress.addCompartment(compartmentList);
+			trainList.add(nagercoilExpress);
 			compartmentList.clear();
 			stationList.clear();
       
@@ -393,7 +401,70 @@ public class TrainSchedule{
 			Vaigai.capacity = 2;
 			compartmentList.add(Vaigai);
 			System.out.println("This Train has an engine");
+			
+			FirstAC vgcomp1 = new FirstAC();
+			vgcomp1.capacity = 33;
+			compartmentList.add(vgcomp1);
+			System.out.println("This Train has an firstac compartment");
+			
+			FirstAC vgcomp2 = new FirstAC();
+			vgcomp2.capacity = 23;
+			compartmentList.add(vgcomp2);
+            System.out.println("This train has an another firstac compartment");	
+
+            FirstAC vgcomp3 = new FirstAC();
+			vgcomp3.capacity = 22;
+			compartmentList.add(vgcomp3);
+			System.out.println("This Train has 3rd FirstAC Compartment");
+	
+			
+			Pantry vgcomp4 = new Pantry();
+			vgcomp4.capacity = 2;
+			compartmentList.add(vgcomp4);
+			System.out.println("This Train has an Pantry Compartment");
+			
+			
+			Pantry vgcomp5 = new Pantry();
+			vgcomp5.capacity = 2;
+			compartmentList.add(vgcomp5);
+			System.out.println("This Train has an another Pantry");
+			
+			
+			Unreserved vgcomp6 = new Unreserved();
+			vgcomp6.capacity = 50;
+			compartmentList.add(vgcomp6);
+			System.out.println("This Train has an Unreserved Compartment");
+			
+			
+			
+			Unreserved vgcomp7 = new Unreserved();
+			vgcomp7.capacity = 50;
+			compartmentList.add(vgcomp7);
+			System.out.println("This Train has an another Unreserved Compartment");
 		
+			
+			Unreserved vgcomp8 = new Unreserved();
+			vgcomp8.capacity = 50;
+			compartmentList.add(vgcomp8);
+			System.out.println("This Train has 3rd Unreserved Compartment");
+			
+			
+			SleeperClass vgcomp9 = new SleeperClass();
+			vgcomp9.capacity = 25;
+			compartmentList.add(vgcomp9);
+			System.out.println("This Train has an SleeperClass Compartment");
+
+			
+			SleeperClass vgcomp10 = new SleeperClass();
+			vgcomp10.capacity = 27;
+			compartmentList.add(vgcomp10);
+			System.out.println("This Train has an another SleeperClass Compartment");
+
+			
+			SleeperClass vgcomp11 = new SleeperClass();
+			vgcomp11.capacity = 22;
+			compartmentList.add(vgcomp11);
+			System.out.println("This Train has 3rf SleeperClass Compartment");			
 		
 			Station malamadai = new Station();
 			stationFacility.add("Left luggage finding Squads");
@@ -411,7 +482,9 @@ public class TrainSchedule{
 			stationList.add(tiruchirapalli);
 			
 			vaigaiExpress.addStations(stationList);
+			vaigaiExpress.addCompartment(compartmentList);
 			trainList.add(vaigaiExpress);
+			compartmentList.clear();
 			stationList.clear();
 			
 			
